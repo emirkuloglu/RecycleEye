@@ -8,4 +8,4 @@ export const COLORS = {
   error: "#D9534F",
   success: "#5CB85C",
   inputBorder: "#E0Dcd9"
-};
+} as const;
