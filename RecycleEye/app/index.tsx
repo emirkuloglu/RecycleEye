@@ -8,8 +8,8 @@ import { COLORS} from '../constants/colors';
 import { styles } from '../constants/styles';
 
 
-const ROBOFLOW_API_KEY = "SENIN_API_KEYIN";
-const MODEL_ID = "atik-siniflandirma/1"; 
+const ROBOFLOW_API_KEY = "gn8i3EVHAFviXNQ47UDb";
+const MODEL_ID = "recycleye/2";
 
 export default function Page() {
   const [permission, requestPermission] = useCameraPermissions();
@@ -25,7 +25,7 @@ export default function Page() {
     try
     {
       setIsProcessing(true);
-      const url = `https://detect.roboflow.com/${MODEL_ID}?api_key=${ROBOFLOW_API_KEY}`;
+      const url = `https://serverless.roboflow.com/${MODEL_ID}?api_key=${ROBOFLOW_API_KEY}`;
 
       const response = await axios({
         method: 'POST',
